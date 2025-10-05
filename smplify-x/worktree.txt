@@ -1,0 +1,4 @@
+
+(signavatars) D:\Study\SignLanguageDetection\smplify-x>cd /d "D:\Study\SignLanguageDetection\smplify-x" 
+
+(signavatars) D:\Study\SignLanguageDetection\smplify-x>tree /A /F  1>worktree.txt 

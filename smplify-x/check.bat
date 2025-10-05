@@ -1,0 +1,13 @@
+python smplifyx\main.py ^
+  --config "cfg_files\fit_smplx.yaml" ^
+  --data_folder "data" ^
+  --img_folder "images\_-adcxjm1R4_0-8-rgb_front" ^
+  --keyp_folder "keypoints\_-adcxjm1R4_0-8-rgb_front" ^
+  --output_folder "output\_-adcxjm1R4_0-8-rgb_front" ^
+  --result_folder results --mesh_folder meshes --summary_folder summaries ^
+  --model_type smplx --use_cuda False --interpenetration False ^
+  --model_folder "models" ^
+  --use_vposer True ^
+  --vposer_ckpt "D:\Study\SignLanguageDetection\smplify-x\models\vposer_v1_0" ^
+  --part_segm_fn "models\smplx_parts_segm.pkl" ^
+  --max_persons 1 --visualize False --save_meshes True

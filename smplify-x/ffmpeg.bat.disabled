@@ -1,0 +1,5 @@
+
+ffmpeg -y -v error -stats ^
+  -i "data\videos\_-adcxjm1R4_0-8-rgb_front.mp4" ^
+  -frames:v 1 "data\images\_-adcxjm1R4_0-8-rgb_front_run2\probe.jpg"
+
