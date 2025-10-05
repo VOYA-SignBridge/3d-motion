@@ -3,6 +3,7 @@ data/
 openpose/models/pose/body_25/pose_iter_584000.caffemodel
 openpose/models/hand/pose_iter_102000.caffemodel
 openpose/models/face/pose_iter_116000.caffemodel
+openpose/bin/
 
 smplify-x/models/smplx/
 result/
