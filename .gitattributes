@@ -11,3 +11,4 @@ openpose/models/** filter=lfs diff=lfs merge=lfs -text
 smplify-x/models/** filter=lfs diff=lfs merge=lfs -text
 *.exe filter=lfs diff=lfs merge=lfs -text
 *.dll filter=lfs diff=lfs merge=lfs -text
+openpose/models/**/*.caffemodel filter=lfs diff=lfs merge=lfs -text
