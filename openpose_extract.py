@@ -95,21 +95,35 @@ def main():
             str(exe),
             "--video", str(vid),
             "--model_pose", "BODY_25",
-            "--hand", "--face",
+            "--hand",
+            "--face",
             "--model_folder", str(models),
             "--write_json", str(out_json),
             "--display", "0",
             "--num_gpu", str(args.num_gpu),
             "--num_gpu_start", str(args.gpu_start),
+
+            # Additional configs
+            "--net_resolution", "1312x736",
+            "--scale_number", "4",
+            "--scale_gap", "0.25",
+            "--hand_scale_number", "6",
+            "--hand_scale_range", "0.4",
         ]
 
         if args.video_overlay:
-            # JSON + overlayed video (no images)
-            cmd += ["--write_video", str(out_video), "--render_pose", "1"]
+            # JSON + overlay VIDEO (draw everything)
+            cmd += [
+                "--render_pose", "1",
+                "--write_video", str(out_video)
+            ]
         else:
-            # JSON + RAW frames (no overlay)
-            cmd += ["--render_pose", "0", "--write_images", str(out_images),
-                    "--write_images_format", args.images_format]
+            # JSON + RAW-LOOKING FRAMES (no visible overlay)
+            cmd += [
+                "--render_pose", "0",
+                "--write_images", str(out_images),
+                "--write_images_format", "png",
+            ]
 
         if args.hand_res:
             cmd += ["--hand_net_resolution", args.hand_res]
